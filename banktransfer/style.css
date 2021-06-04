@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    background-color: lightblue;
+    height: 60px;
+    width: 100%;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list {
+    padding-left: 0;
+    list-style: none;
+}
+
+li.active {
+    box-shadow: 0 0 7px rgb(0 0 0 / 70%);
+}
+
+.bank-container {
+    width: 145px;
+    height: 190px;
+    border: 2px solid #e6e6e6;
+    border-radius: 5px;
+    position: relative;
+    height: 190px;
+    cursor: pointer;
+    float: left;
+    margin: 0 10px 20px 10px;
+}
+
+.bank-img {
+    height: 145px;
+}
+
+.bank-img img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bank-name {
+    border-top: 2px solid #e6e6e6;
+    padding: 5px 0 0;
+    color: #4d4d4d;
+    font-size: 11px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.add-form {
+    background-color: #f2f2f2;
+    margin: 15px;
+    padding: 25px;
+}
+
+.add-form label {
+    padding-right: 20px;
+}
+
+.add-form .required label input {
+    width: 450px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+    display: block;
+}
+
+.form .required label input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form span {
+    color: #e74c3c;
+    font-size: 1.5em;
+}
+
+.form label input:valid {
+    border-color: #2ecc71;
+}
+
+
+/* .form .required label input:invalid {
+    border-color: #e74c3c;
+} */

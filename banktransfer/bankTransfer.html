@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Googlrr font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mobalet Bank Transfer</title>
+</head>
+
+<body>
+    <div class="navbar"></div>
+    <div class="bankTransfer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <ul class="list" id="bankList">
+                        <li id="selectBankId" bankId="1" class="bank-container" title="Sunrise Bank Ltd.">
+                            <input style="display: none" type="radio" name="payingBank" id="bankRadioId1" value="1">
+                            <div class="bank-img">
+                                <img src="https://paybyonline.com/newbucket/documents/2016-02-08001559sun_.png" class="img-responsive" alt="Sunrise Bank Ltd.">
+                            </div>
+                            <div class="bank-name text-center" id="bankName1">Sunrise Bank Ltd.</div>
+                        </li>
+                        <!-- <li id="selectBankId" bankId="2" class="bank-container" title="NIC Asia Bank Ltd.">
+                            <input style="display: none" type="radio" name="payingBank" id="bankRadioId2" value="2">
+                            <div class="bank-img">
+                                <img src="https://paybyonline.com/newbucket/documents/2015-10-07022901Nic_Bank.png" class="img-responsive" alt="NIC Asia Bank Ltd.">
+                            </div>
+                            <div class="bank-name text-center" id="bankName2">NIC Asia Bank Ltd.</div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="add-form">
+                        <div>Selected Bank</div>
+                        <div class="bank-name text-left" id="bankNames11">
+                            <h4>Sunrise Bank Ltd.</h4>
+                        </div>
+                        <label for="Mobile Number">
+                          <input type="radio" name="payThrough" onchange="test()" id="mobileNumber"  value="Mobile Number" checked />Mobile Number                          
+                        </label>
+                        <label for="Account Number">
+                          <input type="radio" name="payThrough" onchange="test1()"  id="accountNumber" value="Account Number" />Account Number
+                        </label>
+                        <br>
+                        <form id="form" method="POST" action="">
+                            <div class="form ">
+                                <div class="required ">
+                                    <label for="Mobile Number "> <label id="somename">Mobile Number</label><span>*</span><br>
+                                    <input type="phone " name="MObile Number " placeholder="9841424344 " id="userid" minlength="10" maxlength=" " required/>
+                                    <small></small>
+                                    </label>
+                                    <label for="Account Holder's Name">Account Holder's Name <span>*</span><br>
+                              <input type="text" name="Registered account holder's name" placeholder="Ram Kumar Bhattarai" id="accountHolderName" required/> 
+                              <small></small>
+
+                              </label>
+                                    <label for="Amount">Amount <span>*</span><br>
+                              <input type="number" name="Amount"  placeholder="100" min="100" id="amount" required/>
+                              </label>
+                                    <small></small>
+                                    <label for="Remarks">Remarks <span>*</span><br>
+                                 <input type="text" name="remarks"  placeholder="Remarks" id="remarks" required/>
+                                   <small></small>
+                              </label>
+                                </div>
+                                <input type="checkbox" id="userAgreement" required>&nbsp; I agree that this payment is not refundable.<span>*</span>
+                                <small></small>
+
+                                <br> <br> <button class="btn btn-primary" type="submit">Pay Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bankTransfer.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</html>
